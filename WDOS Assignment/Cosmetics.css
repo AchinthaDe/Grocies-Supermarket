@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'oswald';
+}
+
+
+
+h1{
+    color: white;
+    font-family: 'oswald';
+    font-size: medium;
+    padding-left: 10px;
+}
+.icon{
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+nav{
+    height: 60px;
+    background-color: black;
+    display: flex; /**/
+    justify-content: flex-end; /* will align links at the end of nav bar*/
+    align-items: center; /*will center everything vertically*/
+}
+.links-container{
+    height: 100%; 
+    width: 100%; /*height and width are 100% to fill out the entire nav bar*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'oswald';
+}
+nav a:hover{
+    background-color: blue;
+
+}
+nav .login{
+    margin-left: auto;
+}
+li{
+    list-style: none;
+}
+/* Hide the dropdown initially */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: black; /* Dropdown background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Dropdown box shadow */
+    z-index: 1; /* Ensure dropdown appears above other content */
+}
+/* Style the list items */
+.dropdown li {
+    width: 200px;
+    height: 50px;
+    padding: 0px;
+}
+/* Style the anchor elements inside the list items */
+.dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: white; /* Change color as needed */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+/* Apply hover effect to the anchor elements */
+.dropdown li a:hover {
+    background-color: #006241; /* Change background color on hover */
+}
+/* Show the dropdown when hovering over the "Categories" button */
+.nav:nth-of-type(2):hover + .dropdown, .dropdown:hover {
+    display: block;
+}
+/* Position the dropdown relative to the "Categories" button */
+.links-container {
+    position: relative; /* Ensure the parent container is positioned */
+}
+.dropdown {
+    top: 100%; /* Position the dropdown below the button */
+    left: 103px; /* Align the dropdown with the left edge of the button */
+    width: 200px; /* Adjust width as needed */
+}
+nav svg{
+    fill: white;
+}
+
+#sidebar-active{
+    display: none; /*to only display the elements in the mobile version*/
+}
+.open-sidebar-button,.close-sidebar-button{
+    display: none; /*same for the open and close sidebar buttons*/
+}
+
+.box{
+    display: flex;
+    width: 100%;
+    background: white;
+    margin-top: 6px;
+}
+.box .search-box{
+    position:relative;
+    height: 45px;
+    max-width: 350px;
+    background: transparent;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.search-box input{
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    background: lightgrey;
+    outline: solid;
+    outline-color: darkgrey;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;   
+}
+.search-box .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0px;
+    margin-right: -20px;
+    width: 45px;
+    height: 100%;
+    background-color: lightseagreen;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 25px;
+}
+#check{
+    display: none;
+}
+
+
+.favourites{
+    display: flex;
+    border: none;
+    background: none;
+    align-items: center;
+    margin-right: 20px;
+}
+.cart{
+    display: flex;
+    border: none;
+    background: none;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+.heading{
+    color: black;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.background img{
+    width: 100%;
+    margin-top: 7px;
+}
+
+
+
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.product-table thead {
+    background-color: #f4f4f4;
+    border: solid 1px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.product-table th, .product-table td {
+    padding: 15px 0px;
+    text-align: center;
+    border-bottom: solid 1px;
+}
+
+.product-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.product-table img {
+    width: 159px;
+    height: auto;
+
+}
+
+.product-table .product {
+    display: flex;
+    align-items: center;
+}
+
+.product-table button {
+    background-color: white;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.product-table button svg {
+    margin-top: 10px;
+    fill: black;
+}
+
+.product-table button:hover {
+    background-color: greenyellow;
+}
+
+
+/* Mobile styles for very small screens */
+@media (max-width: 0px) {
+    .product-table td {
+        padding-left: 45%;
+    }
+
+    .product-table td::before {
+        padding-left: 10px;
+    }
+
+    .product-table .product img {
+        width: 30px;
+    }
+}
+
+
+
+/*.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td .product{
+    
+}
+.product-table th, .product-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+}
+
+.product-table img {
+    max-width: 200px;
+    height: auto;
+}
+.product-table tbody tr td button{
+    width: 20px;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+.product-table tbody tr td button :hover{
+    width: 20px;
+    background: greenyellow;
+    border-radius: 20px;
+    padding: 5px;
+}*/
+
+
+
+
+
+
+
+@media(max-width: 700px){
+    .links-container{
+        flex-direction: column;
+        align-items: flex-start; /*to align items on the left side*/
+
+        position: fixed;
+        top: 0;
+        right: -500px;
+        z-index: 10; /* to make sure it is above everything else*/
+        width: 300px;
+
+        background-color: black;
+        box-shadow: -5px 0 5px black;
+        transition: 0.75s ease-out;
+    }
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+    .open-sidebar-button,.close-sidebar-button{
+        display: block; 
+        padding: 20px;
+    }
+    
+    #sidebar-active:checked ~ .links-container{   /* '~' is called the sibling selector*/
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .box{
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    .box .search-box{
+        max-width: 50px;
+        transition: all 0.3s;
+        position:relative;
+        background-color: none;
+        border-radius: 25px;
+        margin: 0;
+        margin-right: 7px;
+    }
+    .search-box input{
+        width: 100%;
+        
+        opacity: 0;
+        padding-left:10px;
+    }
+
+
+    #check:checked ~ .search-box>input{
+        opacity:1;
+        width: fit-content;
+    }
+
+    #check:checked ~ .search-box{
+        max-width: 200px;
+
+
+    }
+    .search-box .icon{
+        position: absolute;
+        right: 24px;
+        top: 0;
+        margin-top: 0px;
+        margin-right: -24px;
+        width: 45px;
+        height: 100%;
+        background: none;
+        text-align: center;
+        line-height: 55px;
+        border-radius: 25px;
+    }
+    #check:checked ~ .search-box .icon{
+        background: lightseagreen;
+        border-radius: 0 25px 25px 0;
+    }
+    #check{
+        display: none;
+    }
+
+    .product-table td::before {
+        padding-left: 10px;
+    }
+
+    .product-table .product img {
+        width: 100px;
+        height: auto;
+    }
+}
