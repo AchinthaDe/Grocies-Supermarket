@@ -392,42 +392,42 @@ nav .login{/*login positioning*/
 }
 
 .image-slider-1 #slider-img-1{
-    background-image: url(/WDOS%20Assignment/Assets/Imgs-%20About%20Us/german%20storefront.jpg);
+    background-image: url(./Assets/Imgs-%20About%20Us/german%20storefront.jpg);
     background-position: center;
     background-size: cover;
 }
 .image-slider-1 #slider-img-2{
-    background-image: url(/WDOS%20Assignment/Assets/Imgs-%20About%20Us/poland-branch-1.jpg);
+    background-image: url(./Assets/Imgs-%20About%20Us/poland-branch-1.jpg);
     background-position: center;
     background-size: cover;
 }
 .image-slider-1 #slider-img-3{
-    background-image: url(/WDOS%20Assignment/Assets/Imgs-%20About%20Us/epsteins-island-1.jpg);
+    background-image: url(./Assets/Imgs-%20About%20Us/epsteins-island-1.jpg);
     background-position: center;
     background-size: cover;
 }
 .image-slider-2 #slider-img-4{
-    background-image: url(/WDOS%20Assignment/Assets/Imgs%20-%20Home%20Page/Catering.jpg);
+    background-image: url(./Assets/Imgs%20-%20Home%20Page/Catering.jpg);
     background-position: center;
     background-size: cover;
 }
 .image-slider-2 #slider-img-5{
-    background-image: url(/WDOS%20Assignment/Assets/Imgs%20-%20Home%20Page/Floral-Services.jpg);
+    background-image: url(./Assets/Imgs%20-%20Home%20Page/Floral-Services.jpg);
     background-position: center;
     background-size: cover;
 }
 .image-slider-2 #slider-img-6{
-    background-image: url(/WDOS%20Assignment/Assets/Imgs%20-%20Home%20Page/Home-Delivery.jpg);
+    background-image: url(./Assets/Imgs%20-%20Home%20Page/Home-Delivery.jpg);
     background-position: center;
     background-size: cover;
 }
 .image-slider-2 #slider-img-7{
-    background-image: url(/WDOS%20Assignment/Assets/Imgs%20-%20Home%20Page/Gift-Baskets.jpg);
+    background-image: url(./Assets/Imgs%20-%20Home%20Page/Gift-Baskets.jpg);
     background-position: center;
     background-size: cover;
 }
 .image-slider-2 #slider-img-8{
-    background-image: url(/WDOS%20Assignment/Assets/Imgs%20-%20Home%20Page/Party-Planning.jpg);
+    background-image: url(./Assets/Imgs%20-%20Home%20Page/Party-Planning.jpg);
     background-position: center;
     background-size: cover;
 }

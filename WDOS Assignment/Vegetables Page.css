@@ -256,19 +256,19 @@ nav svg{
     transform: translateY(0) !important;
 }
 .card[for="c1"]{
-    background-image: url(/WDOS%20Assignment/Assets/Imgs%20-%20Vegetables%20Page/farm-4.jpg);
+    background-image: url(./Assets/Imgs%20-%20Vegetables%20Page/farm-4.jpg);
     background-size: cover;
 }
 .card[for="c2"]{
-    background-image: url(/WDOS%20Assignment/Assets/Imgs%20-%20Vegetables%20Page/farm-2.jpg);
+    background-image: url(./Assets/Imgs%20-%20Vegetables%20Page/farm-2.jpg);
     background-size: cover;
 }
 .card[for="c3"]{
-    background-image: url(/WDOS%20Assignment/Assets/Imgs%20-%20Vegetables%20Page/farm-3.jpg);
+    background-image: url(./Assets/Imgs%20-%20Vegetables%20Page/farm-3.jpg);
     background-size: cover;
 }
 .card[for="c4"]{
-    background-image: url(/WDOS%20Assignment/Assets/Imgs%20-%20Vegetables%20Page/farm-1.jpg);
+    background-image: url(./Assets/Imgs%20-%20Vegetables%20Page/farm-1.jpg);
     background-size: cover;
 }
 
