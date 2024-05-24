@@ -163,82 +163,53 @@ li{
     margin-top: 10px;
 }
 
-.heading{
-    color: black;
-    text-align: center;
-    font-size: 45px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
 
-.background img{
-    width: 100%;
-    margin-top: 7px;
-}
-
-
-
-
-.product-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 18px;
-    text-align: left;
-}
-
-.product-table thead {
-    background-color: #f4f4f4;
-    border: solid 1px;
-}
-.product{
+.form {
+    font-family: 'oswald';
     display: flex;
-    flex-direction: column;
-    
-}
-
-.product-table th, .product-table td {
-    padding: 15px 0px;
-    text-align: center;
-    border-bottom: solid 1px;
-}
-
-.product-table th {
-    background-color: #f8f8f8;
-    font-weight: bold;
-}
-
-.product-table img {
-    width: 159px;
-    height: auto;
-
-}
-
-.product-table .product {
-    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.product-table button {
+    min-height: 100vh;
     background-color: white;
-    border: none;
-    color: white;
-    padding: 8px 16px;
+}
+
+.form form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+
+}
+
+.form h2 {
+    color: green;
+    padding-bottom: 10px;
     text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 25px;
 }
 
-.product-table button svg {
-    margin-top: 10px;
-    fill: black;
+.form .form-group {
+    margin-bottom: 15px;
 }
 
-.product-table button:hover {
-    background-color: greenyellow;
+
+.form input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
+.form  input[type="submit"] {
+    width: 25%;
+    margin-left: 40%;
+}
+
+.form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
 footer{
     background-color: #9ACD32;
 }
@@ -278,65 +249,6 @@ footer{
 .footer-links{
     list-style: none;
 }
-
-
-/* Mobile styles for very small screens */
-@media (max-width: 0px) {
-    .product-table td {
-        padding-left: 45%;
-    }
-
-    .product-table td::before {
-        padding-left: 10px;
-    }
-
-    .product-table .product img {
-        width: 30px;
-    }
-}
-
-
-
-/*.product-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-td .product{
-    
-}
-.product-table th, .product-table td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.product-table th {
-    background-color: #f2f2f2;
-}
-
-.product-table img {
-    max-width: 200px;
-    height: auto;
-}
-.product-table tbody tr td button{
-    width: 20px;
-    background: none;
-    border: none;
-    padding: 5px;
-}
-.product-table tbody tr td button :hover{
-    width: 20px;
-    background: greenyellow;
-    border-radius: 20px;
-    padding: 5px;
-}*/
-
-
-
-
-
-
-
 
 @media(max-width: 750px){
     .links-container{ /*mobile links container*/
@@ -378,7 +290,6 @@ td .product{
         z-index: 9;
     }
     
-
     .dropdown { /*hidden dropdown*/
         display: none;
         position: absolute;
@@ -437,9 +348,12 @@ td .product{
     }
     .search-box input{ /*search input*/
         width: 100%;
+        
         opacity: 0;
         padding-left:10px;
     }
+
+
     #check:checked ~ .search-box>input{ /*search input expands*/
         opacity:1;
         width: fit-content;
@@ -493,16 +407,5 @@ td .product{
         display: flex;
         justify-content: center;
         padding-bottom: 10px;
-    }
-}
-
-@media(max-width: 700px){
-    .product-table td::before {
-        padding-left: 10px;
-    }
-
-    .product-table .product img {
-        width: 100px;
-        height: auto;
     }
 }

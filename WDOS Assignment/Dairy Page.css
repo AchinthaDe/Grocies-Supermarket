@@ -6,93 +6,93 @@
 }
 
 
-h1{
-    color: white;
-    font-family: 'oswald';
-    font-size: medium;
+h1{ /*logo*/
+    color: black;
+    font-family: 'poppins';
+    font-size: 20px;
     padding-left: 10px;
 }
-.icon{
+.icon{ /*nav bar icons*/
     vertical-align: middle;
     margin-right: 5px;
     margin-top: 6px;
 }
-nav{
+.icon svg{ /*nav bar icons*/
+    fill: black;
+}
+nav{/*nav bar*/
     height: 60px;
-    background-color: black;
+    background-color: #9ACD32;
     display: flex; /**/
     justify-content: flex-end; /* will align links at the end of nav bar*/
     align-items: center; /*will center everything vertically*/
 }
-.links-container{
+.links-container{/*mobile nav bar*/
     height: 100%; 
     width: 100%; /*height and width are 100% to fill out the entire nav bar*/
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-nav a{
+nav a{/*nav bar names*/
     height: 100%;
     padding: 0 20px;
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: aliceblue;
+    color: black;
     font-family: 'oswald';
 }
 nav a:hover{
-    background-color: blue;
+    background-color: green;
 
 }
-nav .login{
+nav .login{/*login positioning*/
     margin-left: auto;
 }
 li{
     list-style: none;
 }
-/* Hide the dropdown initially */
-.dropdown {
+
+.dropdown{/*hidden dropdown*/
     display: none;
     position: absolute;
-    background-color: black; /* Dropdown background color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Dropdown box shadow */
-    z-index: 1; /* Ensure dropdown appears above other content */
+    background-color: #9ACD32;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    z-index: 1; 
 }
-/* Style the list items */
+
 .dropdown li {
     width: 200px;
     height: 50px;
     padding: 0px;
 }
-/* Style the anchor elements inside the list items */
-.dropdown li a {
+
+.dropdown li a /*the list items */{
     display: block;
     text-decoration: none;
-    color: white; /* Change color as needed */
+    color: black; 
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
 }
-/* Apply hover effect to the anchor elements */
-.dropdown li a:hover {
-    background-color: #006241; /* Change background color on hover */
+
+.dropdown li a:hover{ /*hover to the elements*/
+    background-color: green;
 }
-/* Show the dropdown when hovering over the "Categories" button */
-.nav:nth-of-type(2):hover + .dropdown, .dropdown:hover {
+
+.nav:nth-of-type(2):hover + .dropdown, .dropdown:hover{ /*hover on categories*/
     display: block;
 }
-/* Position the dropdown relative to the "Categories" button */
-.links-container {
-    position: relative; /* Ensure the parent container is positioned */
+
+.links-container{ /*make dropdown relative*/ 
+    position: relative; 
 }
-.dropdown {
-    top: 100%; /* Position the dropdown below the button */
-    left: 103px; /* Align the dropdown with the left edge of the button */
-    width: 200px; /* Adjust width as needed */
-}
-nav svg{
-    fill: white;
+.dropdown { /*positioning*/ 
+    top: 100%;
+    left: 103px; 
+    width: 200px; 
 }
 
 #sidebar-active{
@@ -102,22 +102,21 @@ nav svg{
     display: none; /*same for the open and close sidebar buttons*/
 }
 
-.box{
+.box{ /*second icon bar*/
     display: flex;
     width: 100%;
     background: white;
     margin-top: 6px;
 }
-.box .search-box{
+.box .search-box{ /*search-box*/
     position:relative;
     height: 45px;
     max-width: 350px;
     background: transparent;
     margin: auto;
-    border-radius: 25px;
 }
 
-.search-box input{
+.search-box input{ /*the input*/
     height: 100%;
     width: 400px;
     border-radius: 100px;
@@ -128,7 +127,7 @@ nav svg{
     padding-left: 20px;
     font-size: 18px;   
 }
-.search-box .icon{
+.search-box .icon{ /*search icon*/
     position: absolute;
     right: 0;
     top: 0;
@@ -136,27 +135,32 @@ nav svg{
     margin-right: -70px;
     width: 45px;
     height: 100%;
-    background-color: lightseagreen;
+    background-color: green;
     text-align: center;
     line-height: 55px;
     border-radius: 25px;
 }
-#check{
+.search-box .icon svg{ /*search svg*/
+    fill: white;
+}
+#check{ /*checkbox*/
     display: none;
 }
-.favourites{
+
+
+.favourites{ /*favourites icon*/
     display: flex;
     border: none;
     background: none;
     align-items: center;
     margin-right: 20px;
 }
-.cart{
+.order svg{ /*order icon*/
     display: flex;
-    border: none;
     background: none;
     align-items: center;
     margin-right: 20px;
+    margin-top: 10px;
 }
 .banner img{
     width: 100%;
@@ -202,13 +206,63 @@ nav svg{
 .container .item button{
     border: none;
     background: none;
-    margin-top: 15px;
+    margin-top: 20px;
+    width: 45px;
+    height: 45px;
+}
+.container .item button:hover{
+    background: greenyellow;
+    width: 45px;
+    height: 45px;
+    border-radius: 20px;
 }
 
 
 
-@media(max-width: 700px){
-    .links-container{
+footer{
+    background-color: #9ACD32;
+}
+.footer-container{
+    width: 100%;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a {
+    text-decoration: none;
+    padding-top: 30px ;
+    margin-left: 30px;
+}
+.social-icons a i{
+    background-color: #9ACD32;
+}
+.footer-nav ol{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.footer-nav ol li{
+    text-decoration: none;
+    padding: 20px;
+}
+.footer-nav ol li a{
+    text-decoration: none;
+    color: black;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.footer-links{
+    list-style: none;
+}
+
+
+
+@media(max-width: 750px){
+    .links-container{ /*mobile links container*/
         flex-direction: column;
         align-items: flex-start; /*to align items on the left side*/
 
@@ -218,27 +272,27 @@ nav svg{
         z-index: 10; /* to make sure it is above everything else*/
         width: 300px;
 
-        background-color: black;
-        box-shadow: -5px 0 5px black;
+        background-color: #9ACD32;
+        box-shadow: -2px 0 2px gray;
         transition: 0.75s ease-out;
     }
-    nav a{
+    nav a{ 
         box-sizing: border-box;
         height: auto;
         width: 100%;
         padding: 20px 30px;
         justify-content: flex-start;
     }
-    .open-sidebar-button,.close-sidebar-button{
+    .open-sidebar-button,.close-sidebar-button{ /*the icons linked to the checkbox*/
         display: block; 
         padding: 20px;
     }
     
-    #sidebar-active:checked ~ .links-container{   /* '~' is called the sibling selector*/
+    #sidebar-active:checked ~ .links-container{ /* '~' is called the sibling selector*/
         right: 0;
     }
 
-    #sidebar-active:checked ~ #overlay{
+    #sidebar-active:checked ~ #overlay{ /*overlay behind the container*/
         height: 100%;
         width: 100%;
         position: fixed;
@@ -246,13 +300,55 @@ nav svg{
         left: 0;
         z-index: 9;
     }
-
-    .box{
-    display: flex;
-    justify-content: flex-end;
+    
+    .dropdown { /*hidden dropdown*/
+        display: none;
+        position: absolute;
+        background-color: #9ACD32;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        z-index: 1; 
     }
 
-    .box .search-box{
+    .dropdown li { 
+        width: 200px;
+        height: 50px;
+        padding: 0px;
+    }
+
+    .dropdown li a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .dropdown li a:hover{  /*hover to the elements*/
+        background-color: green;
+    }
+
+    .nav:nth-of-type(2):hover + .dropdown, .dropdown:hover { /*hover on categories*/
+        display: block;
+    }
+    .dropdown { /*positioning*/
+        top: 36%;
+        left: 103px; 
+        width: 200px; 
+    }
+    nav svg{ 
+        fill: black;
+    }
+
+    .box{ /*white-box*/
+        display: flex;
+        justify-content: flex-end;
+    }
+    .search-box .icon svg{ /*search icon*/
+        fill: black;
+    }
+    .box .search-box{ /*box behind the search input*/
         max-width: 50px;
         transition: all 0.3s;
         position:relative;
@@ -261,7 +357,7 @@ nav svg{
         margin: 0;
         margin-right: 7px;
     }
-    .search-box input{
+    .search-box input{ /*search input*/
         width: 100%;
         
         opacity: 0;
@@ -269,23 +365,21 @@ nav svg{
     }
 
 
-    #check:checked ~ .search-box>input{
+    #check:checked ~ .search-box>input{ /*search input expands*/
         opacity:1;
         width: fit-content;
     }
 
-    #check:checked ~ .search-box{
+    #check:checked ~ .search-box{ /*checked box behind the search input expands*/
         max-width: 200px;
-
-
     }
-    .search-box .icon{
+    .search-box .icon{ 
         position: absolute;
         right: 24px;
         top: 0;
         margin-top: 0px;
         margin-right: -24px;
-        width: 45px;
+        width: 48px;
         height: 100%;
         background: none;
         text-align: center;
@@ -293,14 +387,40 @@ nav svg{
         border-radius: 25px;
     }
     #check:checked ~ .search-box .icon{
-        background: lightseagreen;
+        background: green;
         border-radius: 0 25px 25px 0;
+    }
+    #check:checked ~ .search-box .icon svg{
+        fill: white;
     }
     #check{
         display: none;
     }
     .item {
         flex: 1 1 calc(50% - 40px);
+    }
+    .footer-container{
+        padding: 0px 0px 0px;
+    }
+    .social-icons a {
+        text-decoration: none;
+        margin-left: 15px;
+    }
+    .footer-nav ol{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+    }
+    .footer-nav ol li{
+        text-align: center;
+        text-decoration: none;
+        padding: 5px;
+    }
+    .footer-bottom{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
     }
     
 }

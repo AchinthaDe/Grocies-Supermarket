@@ -7,8 +7,8 @@
 
 
 h1{
-    color: white;
-    font-family: 'oswald';
+    color: black;
+    font-family: 'poppins';
     font-size: 20px;
     padding-left: 10px;
 }
@@ -17,9 +17,12 @@ h1{
     margin-right: 5px;
     margin-top: 6px;
 }
+.icon svg{
+    fill: black;
+}
 nav{
     height: 60px;
-    background-color: black;
+    background-color: #9ACD32;
     display: flex; /**/
     justify-content: flex-end; /* will align links at the end of nav bar*/
     align-items: center; /*will center everything vertically*/
@@ -37,11 +40,11 @@ nav a{
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: aliceblue;
+    color: black;
     font-family: 'oswald';
 }
 nav a:hover{
-    background-color: blue;
+    background-color: green;
 
 }
 nav .login{
@@ -54,7 +57,7 @@ li{
 .dropdown /*hidden dropdown*/{
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: #9ACD32;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     z-index: 1; 
 }
@@ -68,7 +71,7 @@ li{
 .dropdown li a /*the list items */{
     display: block;
     text-decoration: none;
-    color: white; /* Change color as needed */
+    color: black; 
     height: 100%;
     display: flex;
     align-items: center;
@@ -76,7 +79,7 @@ li{
 }
 
 .dropdown li a:hover /*hover to the elements*/{
-    background-color: #006241;
+    background-color: green;
 }
 
 .nav:nth-of-type(2):hover + .dropdown, .dropdown:hover /*hover on categories*/{
@@ -92,7 +95,7 @@ li{
     width: 200px; 
 }
 nav svg{
-    fill: white;
+    fill: black;
 }
 
 #sidebar-active{
@@ -136,10 +139,13 @@ nav svg{
     margin-right: -70px;
     width: 45px;
     height: 100%;
-    background-color: lightseagreen;
+    background-color: green;
     text-align: center;
     line-height: 55px;
     border-radius: 25px;
+}
+.search-box .icon svg{
+    fill: white;
 }
 #check{
     display: none;
@@ -153,13 +159,19 @@ nav svg{
     align-items: center;
     margin-right: 20px;
 }
-.cart{
+.order svg{
     display: flex;
-    border: none;
     background: none;
     align-items: center;
     margin-right: 20px;
+    margin-top: 10px;
 }
+
+
+
+
+
+
 .banner {
     width: 100%;
     margin-top: 7px;
@@ -291,8 +303,12 @@ nav svg{
     padding: 20px;
     background-color: white;
 }
+.grid-item:hover{
+    transform: scale(1.02);
+    box-shadow: 0;
+}
 .grid-wrapper{
-    background-color: greenyellow;
+    background-color: #9ACD32;
     padding-top: 15px;
 }
 .grid-header{
@@ -331,11 +347,49 @@ nav svg{
     /*grid-template-rows: repeat(5, 1fr);*/
     gap: 10px; /* Adjust the gap between grid items */
     padding: px; /* Adjust padding as needed */
-
+}
+footer{
+    background-color: #9ACD32;
+}
+.footer-container{
+    width: 100%;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a {
+    text-decoration: none;
+    padding-top: 30px ;
+    margin-left: 30px;
+}
+.social-icons a i{
+    background-color: #9ACD32;
+}
+.footer-nav ol{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.footer-nav ol li{
+    text-decoration: none;
+    padding: 20px;
+}
+.footer-nav ol li a{
+    text-decoration: none;
+    color: black;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.footer-links{
+    list-style: none;
 }
 
 
-@media(max-width: 700px){
+@media(max-width: 750px){
     .links-container{
         flex-direction: column;
         align-items: flex-start; /*to align items on the left side*/
@@ -346,8 +400,8 @@ nav svg{
         z-index: 10; /* to make sure it is above everything else*/
         width: 300px;
 
-        background-color: black;
-        box-shadow: -5px 0 5px black;
+        background-color: #9ACD32;
+        box-shadow: -2px 0 2px gray;
         transition: 0.75s ease-out;
     }
     nav a{
@@ -378,7 +432,7 @@ nav svg{
     .dropdown /*hidden dropdown*/{
         display: none;
         position: absolute;
-        background-color: black;
+        background-color: #9ACD32;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
         z-index: 1; 
     }
@@ -389,10 +443,10 @@ nav svg{
         padding: 0px;
     }
 
-    .dropdown li a /*the list items */{
+    .dropdown li a {
         display: block;
         text-decoration: none;
-        color: white; /* Change color as needed */
+        color: black;
         height: 100%;
         display: flex;
         align-items: center;
@@ -400,30 +454,28 @@ nav svg{
     }
 
     .dropdown li a:hover /*hover to the elements*/{
-        background-color: #006241;
+        background-color: green;
     }
 
     .nav:nth-of-type(2):hover + .dropdown, .dropdown:hover /*hover on categories*/{
         display: block;
     }
-
-    .links-container/*make dropdown relative*/ {
-        
-    }
     .dropdown /*positioning*/{
-        top: 39%;
+        top: 36%;
         left: 103px; 
         width: 200px; 
     }
     nav svg{
-        fill: white;
+        fill: black;
     }
 
     .box{
         display: flex;
         justify-content: flex-end;
     }
-
+    .search-box .icon svg{
+        fill: black;
+    }
     .box .search-box{
         max-width: 50px;
         transition: all 0.3s;
@@ -448,8 +500,6 @@ nav svg{
 
     #check:checked ~ .search-box{
         max-width: 200px;
-
-
     }
     .search-box .icon{
         position: absolute;
@@ -457,7 +507,7 @@ nav svg{
         top: 0;
         margin-top: 0px;
         margin-right: -24px;
-        width: 45px;
+        width: 48px;
         height: 100%;
         background: none;
         text-align: center;
@@ -465,11 +515,37 @@ nav svg{
         border-radius: 25px;
     }
     #check:checked ~ .search-box .icon{
-        background: lightseagreen;
+        background: green;
         border-radius: 0 25px 25px 0;
+    }
+    #check:checked ~ .search-box .icon svg{
+        fill: white;
     }
     #check{
         display: none;
+    }
+    .footer-container{
+        padding: 0px 0px 0px;
+    }
+    .social-icons a {
+        text-decoration: none;
+        margin-left: 15px;
+    }
+    .footer-nav ol{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+    }
+    .footer-nav ol li{
+        text-align: center;
+        text-decoration: none;
+        padding: 5px;
+    }
+    .footer-bottom{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
     }
 }
 @media(max-width: 1000px){
