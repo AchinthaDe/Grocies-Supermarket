@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'oswald';
+}
+
+
+
+h1{ /*logo*/
+    color: black;
+    font-family: 'poppins';
+    font-size: 20px;
+    padding-left: 10px;
+}
+.icon{ /*nav bar icons*/
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+.icon svg{ /*nav bar icons*/
+    fill: black;
+}
+nav{/*nav bar*/
+    height: 60px;
+    background-color: #9ACD32;
+    display: flex; /**/
+    justify-content: flex-end; /* will align links at the end of nav bar*/
+    align-items: center; /*will center everything vertically*/
+}
+.links-container{/*mobile nav bar*/
+    height: 100%; 
+    width: 100%; /*height and width are 100% to fill out the entire nav bar*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{/*nav bar names*/
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'oswald';
+}
+nav a:hover{
+    background-color: green;
+
+}
+nav .login{/*login positioning*/
+    margin-left: auto;
+}
+li{
+    list-style: none;
+}
+
+.dropdown{/*hidden dropdown*/
+    display: none;
+    position: absolute;
+    background-color: #9ACD32;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    z-index: 1; 
+}
+
+.dropdown li {
+    width: 200px;
+    height: 50px;
+    padding: 0px;
+}
+
+.dropdown li a /*the list items */{
+    display: block;
+    text-decoration: none;
+    color: black; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.dropdown li a:hover{ /*hover to the elements*/
+    background-color: green;
+}
+
+.nav:nth-of-type(2):hover + .dropdown, .dropdown:hover{ /*hover on categories*/
+    display: block;
+}
+
+.links-container{ /*make dropdown relative*/ 
+    position: relative; 
+}
+.dropdown { /*positioning*/ 
+    top: 100%;
+    left: 103px; 
+    width: 200px; 
+}
+
+#sidebar-active{
+    display: none; /*to only display the elements in the mobile version*/
+}
+.open-sidebar-button,.close-sidebar-button{
+    display: none; /*same for the open and close sidebar buttons*/
+}
+
+.box{ /*second icon bar*/
+    display: flex;
+    width: 100%;
+    background: white;
+    margin-top: 6px;
+}
+.box .search-box{ /*search-box*/
+    position:relative;
+    height: 45px;
+    max-width: 350px;
+    background: transparent;
+    margin: auto;
+}
+
+.search-box input{ /*the input*/
+    height: 100%;
+    width: 400px;
+    border-radius: 100px;
+    background: lightgrey;
+    outline: solid;
+    outline-color: darkgrey;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;   
+}
+.search-box .icon{ /*search icon*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0px;
+    margin-right: -70px;
+    width: 45px;
+    height: 100%;
+    background-color: green;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 25px;
+}
+.search-box .icon svg{ /*search svg*/
+    fill: white;
+}
+#check{ /*checkbox*/
+    display: none;
+}
+
+
+.favourites{ /*favourites icon*/
+    display: flex;
+    border: none;
+    background: none;
+    align-items: center;
+    margin-right: 20px;
+}
+.order svg{ /*order icon*/
+    display: flex;
+    background: none;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+.order-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.order-table,.form{
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.price-table{
+    border-collapse: collapse;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.price-table th,.price-table td{
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+}
+
+.price-table th{
+    background-color: lightgray;
+}
+
+.price-table td img{
+    max-width: auto;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.price-table tfoot td{
+    font-weight: bold;
+    border-top: 2px solid green;
+    border-bottom: none;
+    text-align: end;
+    font-size: 25px;
+}
+
+.price-table tfoot td p{
+    display: inline;
+    margin: 0;
+    font-size: 25px;
+    color: green;
+}
+
+
+
+
+.form {
+    font-family: 'oswald';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.form form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+
+}
+
+.form h2 {
+    color: green;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.form .form-group {
+    margin-bottom: 15px;
+}
+
+
+.form input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.form  input[type="submit"] {
+    width: 25%;
+    margin-left: 40%;
+}
+
+.form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+
+footer{
+    background-color: #9ACD32;
+}
+.footer-container{
+    width: 100%;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a {
+    text-decoration: none;
+    padding-top: 30px ;
+    margin-left: 30px;
+}
+.social-icons a i{
+    background-color: #9ACD32;
+}
+.footer-nav ol{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.footer-nav ol li{
+    text-decoration: none;
+    padding: 20px;
+}
+.footer-nav ol li a{
+    text-decoration: none;
+    color: black;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.footer-links{
+    list-style: none;
+}
+
+@media(max-width: 750px){
+    .links-container{ /*mobile links container*/
+        flex-direction: column;
+        align-items: flex-start; /*to align items on the left side*/
+
+        position: fixed;
+        top: 0;
+        right: -500px;
+        z-index: 10; /* to make sure it is above everything else*/
+        width: 300px;
+
+        background-color: #9ACD32;
+        box-shadow: -2px 0 2px gray;
+        transition: 0.75s ease-out;
+    }
+    nav a{ 
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+    .open-sidebar-button,.close-sidebar-button{ /*the icons linked to the checkbox*/
+        display: block; 
+        padding: 20px;
+    }
+    
+    #sidebar-active:checked ~ .links-container{ /* '~' is called the sibling selector*/
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay{ /*overlay behind the container*/
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+    
+    .dropdown { /*hidden dropdown*/
+        display: none;
+        position: absolute;
+        background-color: #9ACD32;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        z-index: 1; 
+    }
+
+    .dropdown li { 
+        width: 200px;
+        height: 50px;
+        padding: 0px;
+    }
+
+    .dropdown li a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .dropdown li a:hover{  /*hover to the elements*/
+        background-color: green;
+    }
+
+    .nav:nth-of-type(2):hover + .dropdown, .dropdown:hover { /*hover on categories*/
+        display: block;
+    }
+    .dropdown { /*positioning*/
+        top: 36%;
+        left: 103px; 
+        width: 200px; 
+    }
+    nav svg{ 
+        fill: black;
+    }
+
+    .box{ /*white-box*/
+        display: flex;
+        justify-content: flex-end;
+    }
+    .search-box .icon svg{ /*search icon*/
+        fill: black;
+    }
+    .box .search-box{ /*box behind the search input*/
+        max-width: 50px;
+        transition: all 0.3s;
+        position:relative;
+        background-color: none;
+        border-radius: 25px;
+        margin: 0;
+        margin-right: 7px;
+    }
+    .search-box input{ /*search input*/
+        width: 100%;
+        
+        opacity: 0;
+        padding-left:10px;
+    }
+
+
+    #check:checked ~ .search-box>input{ /*search input expands*/
+        opacity:1;
+        width: fit-content;
+    }
+
+    #check:checked ~ .search-box{ /*checked box behind the search input expands*/
+        max-width: 200px;
+    }
+    .search-box .icon{ 
+        position: absolute;
+        right: 24px;
+        top: 0;
+        margin-top: 0px;
+        margin-right: -24px;
+        width: 48px;
+        height: 100%;
+        background: none;
+        text-align: center;
+        line-height: 55px;
+        border-radius: 25px;
+    }
+    #check:checked ~ .search-box .icon{
+        background: green;
+        border-radius: 0 25px 25px 0;
+    }
+    #check:checked ~ .search-box .icon svg{
+        fill: white;
+    }
+    #check{
+        display: none;
+    }
+    .footer-container{
+        padding: 0px 0px 0px;
+    }
+    .social-icons a {
+        text-decoration: none;
+        margin-left: 15px;
+    }
+    .footer-nav ol{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+    }
+    .footer-nav ol li{
+        text-align: center;
+        text-decoration: none;
+        padding: 5px;
+    }
+    .footer-bottom{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+}
+
+@media(max-width: 780px){
+    .order-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .order-table{
+        width: 100%;
+    }
+    .price-table{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+}
+
+@media(max-width: 425px){
+    .price-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .price-table thead {
+        display: none;
+    }
+
+    .price-table tbody {
+        display: block;
+    }
+
+    .price-table tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .price-table td {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .price-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: calc(50% - 20px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: green;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .price-table img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .price-table tfoot td {
+        background-color: lightgray;
+        text-align: center;
+        display: block;
+        width: 100%;
+        border: none;
+        border-top: 1px solid #ddd;
+        padding: 10px;
+    }
+}
