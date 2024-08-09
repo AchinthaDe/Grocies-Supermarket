@@ -193,7 +193,6 @@ li{
 }
 
 .price-table td img{
-    max-width: auto;
     height: 150px;
     display: block;
     margin: 0 auto;
@@ -396,7 +395,6 @@ footer{
         max-width: 50px;
         transition: all 0.3s;
         position:relative;
-        background-color: none;
         border-radius: 25px;
         margin: 0;
         margin-right: 7px;
