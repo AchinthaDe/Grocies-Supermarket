@@ -284,7 +284,6 @@ nav svg{
     grid-template-columns: repeat(auto-fit,minmax(200px,2fr));
     place-content: center;
     white-space: nowrap;
-    overflow: none;
     /*grid-template-rows: repeat(5, 1fr);*/
     gap: 25px; /* Adjust the gap between grid items */
     padding: 30px; /* Adjust padding as needed */
@@ -305,7 +304,6 @@ nav svg{
 }
 .grid-item:hover{
     transform: scale(1.02);
-    box-shadow: 0;
 }
 .grid-wrapper{
     background-color: #9ACD32;
@@ -346,7 +344,6 @@ nav svg{
     white-space: nowrap;
     /*grid-template-rows: repeat(5, 1fr);*/
     gap: 10px; /* Adjust the gap between grid items */
-    padding: px; /* Adjust padding as needed */
 }
 footer{
     background-color: #9ACD32;
